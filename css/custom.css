@@ -1,0 +1,44 @@
+
+.footer {
+    width: 100%;
+    text-align: center;
+    height: 80px;
+}
+
+#sticky-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.footer img {
+    max-height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+hr{
+    border: solid #e7e7e7;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0;
+    margin: auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+.clear{
+    clear:both;
+}
+
+.content{
+    max-width: 62.5rem;
+    padding-top: 99px;
+}
+h1, h2{
+    padding-bottom: 20px;
+}
+
+h2{
+    padding-top: 20px;
+}
