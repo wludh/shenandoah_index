@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />    
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/custom.css" />
-<!-- 
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder> -->
+    <script src="js/interface.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,10 +26,8 @@
                     <a href="index.html" class="navbar-brand">Shenandoah Index</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="search.html">Index</a></li>
+                    <ul class="nav navbar-nav navbar-right right-menu">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="data.html">Data</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
 <!--                         <li><asp:LinkButton ID="LogInOutLinkButton" runat="server" OnClick="LogInOutLinkButton_Click">Log In</asp:LinkButton></li>
@@ -38,11 +35,50 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
-Shenandoah Index:
-<!--             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder> -->
-        </div>
+
+        <ul class="center-outer" id="sub-nav">
+            <li class="center-inner hvr-grow" id="browse-button" onclick="reveal_browse()">Browse</li>
+            <li class="center-inner hvr-grow" id="search-button" onclick="reveal_search()">Search</li>
+            <li class="center-inner hvr-grow" id="visualize-button" onclick="reveal_visualize()">Visualize</li>
+        </ul>
+        <div class="clear"></div>
+
+    <div class="embed-div" id="visualize-div">
+        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByVisualization.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+        <script type="text/javascript">
+            function resizeCB() {
+                var p = $('iframe').parent();
+                $('iframe').css('width', p.width()).css('height', p.height());
+            }
+            $(window).resize(resizeCB);
+            resizeCB();
+        </script>
+    </div>
+
+    <div class="embed-div" id="search-div">
+        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreBySearch.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+        <script type="text/javascript">
+            function resizeCB() {
+                var p = $('iframe').parent();
+                $('iframe').css('width', p.width()).css('height', p.height());
+            }
+            $(window).resize(resizeCB);
+            resizeCB();
+        </script>
+    </div>
+
+
+     <div class="embed-div" id="browse-div">
+        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByIndex.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+        <script type="text/javascript">
+            function resizeCB() {
+                var p = $('iframe').parent();
+                $('iframe').css('width', p.width()).css('height', p.height());
+            }
+            $(window).resize(resizeCB);
+            resizeCB();
+        </script>
+    </div>
 
         <div id="sticky-footer" class="footer">
             <a href="https://digitalhumanities.wlu.edu/"><img src="img/wlu_blue.jpg"></a>

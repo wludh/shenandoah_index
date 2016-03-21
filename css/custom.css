@@ -4,6 +4,11 @@
     text-align: center;
     height: 80px;
 }
+body{
+    font-family: 'Habibi', serif;
+    font-size: 16px;
+    line-height: 29px;
+}
 
 #sticky-footer{
     position: absolute;
@@ -42,3 +47,104 @@ h1, h2{
 h2{
     padding-top: 20px;
 }
+
+#browse-div, #search-div, #visualize-div{
+    display:none;
+}
+
+.embed-div {
+    top:119px; 
+    right:50px; 
+    bottom:90px; 
+    left:50px; 
+    border-bottom:1px solid gray; 
+    position: absolute;
+/*    overflow:hidden;
+*/  font-family: 'Habibi', serif !important;
+    font-size: 16px;
+    line-height: 29px;
+
+/*    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;*/
+}
+
+.caption{
+    padding-top: 10px;
+}
+
+.right-menu{
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    font-color: #5e5e5e;
+}
+
+p{
+    margin: 0 0 20px;
+}
+
+ol{
+    padding-left: 0px;
+}
+
+.row img{
+    padding-bottom: 30px;
+}
+
+#sub-nav{
+    margin-top: 50px;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+
+ul li{
+    float:left;
+    padding-right: 20px;
+}
+
+.center-outer{
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.center-inner{
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.visible{
+    display:inline !important;
+}
+
+.hidden{
+    display:none;
+}
+
+.hvr-grow {
+/*https://github.com/IanLunn/Hover/blob/master/css/hover.css
+*/  
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
