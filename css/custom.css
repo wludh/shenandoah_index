@@ -164,6 +164,7 @@ ul li{
     .row{
         margin-left: 25px;
         margin-right: 25px;
+        overflow-x:hidden;
     }
 
     .row img {
