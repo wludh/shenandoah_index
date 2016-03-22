@@ -159,3 +159,15 @@ ul li{
     max-width: 50%;
     text-align: center;
 }
+
+@media (max-width: 780px){
+    .row{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .row img {
+        max-width: 85%;
+        height:85%;
+    }
+}
