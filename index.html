@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Shenandoah Index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />    
-    <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/custom.css" />
-    <script src="js/interface.js"></script>
-</head>
-<body>
-    <form id="form1" runat="server">
+    <head>
+        <title>Shenandoah Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <script src="js/jquery-2.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/custom.css" />
+        <script src="js/interface.js"></script>
+    </head>
+    <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -29,61 +28,52 @@
                     <ul class="nav navbar-nav navbar-right right-menu">
                         <li><a href="about.html">About</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-<!--                         <li><asp:LinkButton ID="LogInOutLinkButton" runat="server" OnClick="LogInOutLinkButton_Click">Log In</asp:LinkButton></li>
- -->                    </ul>
                 </div>
             </div>
         </nav>
-
         <ul class="center-outer" id="sub-nav">
             <li class="center-inner hvr-grow" id="browse-button" onclick="reveal_browse()">Browse</li>
             <li class="center-inner hvr-grow" id="search-button" onclick="reveal_search()">Search</li>
             <li class="center-inner hvr-grow" id="visualize-button" onclick="reveal_visualize()">Visualize</li>
         </ul>
         <div class="clear"></div>
+        <div class="embed-div" id="visualize-div">
+            <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByVisualization.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+            <script type="text/javascript">
+                function resizeCB() {
+                    var p = $('iframe').parent();
+                    $('iframe').css('width', p.width()).css('height', p.height());
+                }
+                $(window).resize(resizeCB);
+                resizeCB();
+            </script>
+        </div>
 
-    <div class="embed-div" id="visualize-div">
-        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByVisualization.aspx" style=" border-width:0px; overflow:auto;"></iframe>
-        <script type="text/javascript">
-            function resizeCB() {
-                var p = $('iframe').parent();
-                $('iframe').css('width', p.width()).css('height', p.height());
-            }
-            $(window).resize(resizeCB);
-            resizeCB();
-        </script>
-    </div>
-
-    <div class="embed-div" id="search-div">
-        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreBySearch.aspx" style=" border-width:0px; overflow:auto;"></iframe>
-        <script type="text/javascript">
-            function resizeCB() {
-                var p = $('iframe').parent();
-                $('iframe').css('width', p.width()).css('height', p.height());
-            }
-            $(window).resize(resizeCB);
-            resizeCB();
-        </script>
-    </div>
-
-
-     <div class="embed-div" id="browse-div">
-        <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByIndex.aspx" style=" border-width:0px; overflow:auto;"></iframe>
-        <script type="text/javascript">
-            function resizeCB() {
-                var p = $('iframe').parent();
-                $('iframe').css('width', p.width()).css('height', p.height());
-            }
-            $(window).resize(resizeCB);
-            resizeCB();
-        </script>
-    </div>
-
+        <div class="embed-div" id="search-div">
+            <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreBySearch.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+            <script type="text/javascript">
+                function resizeCB() {
+                    var p = $('iframe').parent();
+                    $('iframe').css('width', p.width()).css('height', p.height());
+                }
+                $(window).resize(resizeCB);
+                resizeCB();
+            </script>
+        </div>
+         <div class="embed-div" id="browse-div">
+            <iframe src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByIndex.aspx" style=" border-width:0px; overflow:auto;"></iframe>
+            <script type="text/javascript">
+                function resizeCB() {
+                    var p = $('iframe').parent();
+                    $('iframe').css('width', p.width()).css('height', p.height());
+                }
+                $(window).resize(resizeCB);
+                resizeCB();
+            </script>
+        </div>
         <div id="sticky-footer" class="footer">
-        <hr>
+            <hr>
             <a href="https://digitalhumanities.wlu.edu/"><img src="img/wlu_blue.jpg" alt="Washington and Lee University Logo"></a>
         </div>
-    </form>
-</body>
+    </body>
 </html>
