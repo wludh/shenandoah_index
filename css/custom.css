@@ -53,14 +53,18 @@ h2{
     display:none;
 }
 
+iframe{
+    border-width: 0px;
+}
+
 .embed-div {
     top:119px; 
     right:50px; 
     bottom:90px; 
     left:50px; 
     position: absolute;
-/*    overflow:hidden;
-*/  font-family: 'Habibi', serif !important;
+    overflow-x:hidden;
+    font-family: 'Habibi', serif !important;
     font-size: 16px;
     line-height: 29px;
 
