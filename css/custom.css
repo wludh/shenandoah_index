@@ -8,6 +8,7 @@ body{
     font-family: 'Habibi', serif;
     font-size: 16px;
     line-height: 29px;
+    overflow-x:hidden;
 }
 
 #sticky-footer{
@@ -164,7 +165,6 @@ ul li{
     .row{
         margin-left: 25px;
         margin-right: 25px;
-        overflow-x:hidden;
     }
 
     .row img {
