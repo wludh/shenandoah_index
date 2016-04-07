@@ -22,7 +22,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Shenandoah Index</a>
+                    <a href="index.html" class="navbar-brand">Shenandoah</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right right-menu">
@@ -31,13 +31,12 @@
                 </div>
             </div>
         </nav>
-        <ul class="center-outer" id="sub-nav">
-            <li class="center-inner hvr-grow" id="browse-button" onclick="reveal_browse()">Browse</li>
-            <li class="center-inner hvr-grow" id="search-button" onclick="reveal_search()">Search</li>
-            <li class="center-inner hvr-grow" id="visualize-button" onclick="reveal_visualize()">Visualize</li>
-        </ul>
+        <div id="subtitle">
+        <h4>A Comprehensive Index of Washington and Lee University's
+ <a href="http://shenandoahliterary.org/">Literary Journal</a> <div id="dates">From 1950-Present</div></h4> 
+        <div id="issn"><h4>0037-3583 (Print ISSN), 2332-8134 (Electronic ISSN)</h4></div></div>
         <div class="clear"></div>
-        <div class="embed-div" id="visualize-div">
+<!--         <div class="embed-div" id="visualize-div">
             <iframe name="visualize-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByVisualization.aspx"></iframe>
             <script type="text/javascript">
                 function resizeCB() {
@@ -47,21 +46,10 @@
                 $(window).resize(resizeCB);
                 resizeCB();
             </script>
-        </div>
+        </div> -->
 
         <div class="embed-div" id="search-div">
-            <iframe name="search-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreBySearch.aspx"></iframe>
-            <script type="text/javascript">
-                function resizeCB() {
-                    var p = $('iframe').parent();
-                    $('iframe').css('width', p.width()).css('height', p.height());
-                }
-                $(window).resize(resizeCB);
-                resizeCB();
-            </script>
-        </div>
-         <div class="embed-div" id="browse-div">
-            <iframe name="browse-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/ExploreByIndex.aspx"></iframe>
+            <iframe name="search-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/Explore.aspx"></iframe>
             <script type="text/javascript">
                 function resizeCB() {
                     var p = $('iframe').parent();
