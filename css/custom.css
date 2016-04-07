@@ -70,7 +70,7 @@ iframe{
 }
 
 .embed-div {
-    top:150px; 
+    top:175px; 
     right:80px; 
     bottom:90px; 
     left:80px; 
@@ -199,6 +199,10 @@ body{
     #dates{
         display: none;
     }
+}
+
+#dates{
+    display:inline;
 }
 #subtitle{
     padding-left: 80px;
