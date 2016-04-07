@@ -16,17 +16,23 @@ function reveal_visualize(){
     $("#visualize-div").addClass('visible');
 };
 
-function add_css_to_iframe(){
-    var cssLink = document.createElement("link") 
-    cssLink.href = "css/custom.css"; 
+function generate_css_link(){
+    var cssLink = document.createElement("link"); 
+    // cssLink.href = "css/custom.css";
+    cssLink.href = "http://mdata1.ad.wlu.edu/ShenandoahExplorer/css/custom.css";
     cssLink.rel = "stylesheet"; 
-    cssLink.type = "text/css"; 
-    frames['search-frame'].document.body.appendChild(cssLink);
-    frames['browse-frame'].document.body.appendChild(cssLink);
-    frames['visualize-frame'].document.body.appendChild(cssLink);
+    cssLink.type = "text/css";
+    return cssLink;
 };
 
-$(document).ready(function(){
+function add_css_to_iframe(){
+    frames['search-frame'].document.head.appendChild(generate_css_link());
+    frames['browse-frame'].document.head.appendChild(generate_css_link());
+    frames['visualize-frame'].document.head.appendChild(generate_css_link());
+    console.log('hello');
+};
+
+function prep_page(){
+    add_css_to_iframe();    
     reveal_search();
-    // add_css_to_iframe();
-});
+};
