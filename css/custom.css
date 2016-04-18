@@ -13,6 +13,7 @@ body{
 #sticky-footer{
     position: absolute;
     bottom: 0;
+    background-color: white;
 }
 
 .footer img {
@@ -287,5 +288,11 @@ div.col-md-3 hr{
 }
 
 .col-md-9{
-    width: 50%
+    width: 50%;
+}
+
+@media(max-width: 760px){
+    .col-md-9{
+        width: 100%;
+    }
 }
