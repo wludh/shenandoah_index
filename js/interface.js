@@ -19,7 +19,7 @@ function reveal_visualize(){
 function generate_css_link(){
     var cssLink = document.createElement("link"); 
     // cssLink.href = "css/custom.css";
-    cssLink.href = "https://fonts.googleapis.com/css?family=Habibi";
+    cssLink.href = "https://fonts.googleapis.com/css?family=Roboto:400,500";
     cssLink.rel = "stylesheet"; 
     cssLink.type = "text/css";
     return cssLink;
@@ -30,6 +30,6 @@ function add_css_to_iframe(){
 };
 
 function prep_page(){
-    // add_css_to_iframe();    
+    add_css_to_iframe();    
     reveal_search();
 };
