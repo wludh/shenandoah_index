@@ -11,7 +11,7 @@ body{
 }
 
 #sticky-footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: white;
 }
@@ -206,7 +206,7 @@ body{
         display: none !important;
     }
     .embed-div{
-        top: 177px;
+        top: 182px;
     }
 }
 
@@ -294,5 +294,9 @@ div.col-md-3 hr{
 @media(max-width: 760px){
     .col-md-9{
         width: 100%;
+    }
+
+    .embed-div{
+        height:54%;
     }
 }
