@@ -61,7 +61,7 @@ h2{
     padding-top: 20px;
 }
 
-/*#browse-div, #search-div, #visualize-div{
+/*#search-div{
     display:none;
 }
 */
@@ -70,20 +70,21 @@ iframe{
 }
 
 .embed-div {
-    top:175px; 
-    right:80px; 
+/*    top:215px; 
+    right:70px; 
     bottom:90px; 
-    left:80px; 
+    left:70px; */
     position: absolute;
     font-family: 'Habibi', serif !important;
     font-size: 16px;
     line-height: 29px;
 
-/*    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;*/
+    width: 100%;
+    height: 63%;
 }
 
 .caption{
@@ -191,13 +192,20 @@ body{
 @media(max-width: 730px){
 
     #issn{
-        display: none;
+        display: none !important;
     }
 }
 
 @media(max-width: 425px){
     #dates{
-        display: none;
+        display: none !important;
+    }
+
+    #subtitle img{
+        display: none !important;
+    }
+    .embed-div{
+        top: 177px;
     }
 }
 
@@ -205,11 +213,22 @@ body{
     display:inline;
 }
 #subtitle{
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 65px;
+    padding-top: 70px;
     padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 687px;
 }
+
+@media(max-width: 730px){
+
+    #subtitle{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+}
+
 
 #SearchRadioButtonList_0, #SearchRadioButtonList_1{
     margin-right: 4px;
@@ -217,4 +236,56 @@ body{
 
 #SearchRadioButtonList_1{
     margin-left: 4px;
+}
+/*
+div.col-md-3 hr{
+    display:none;
+}*/
+/*
+#subtitle{
+    font-size: 14px;
+}*/
+
+#subtitle img{
+    float: left;
+    max-width: 116px;
+    max-height: 116px;
+    margin-right: 14px;
+}
+
+.article{
+    border-bottom: 1px solid #e7e7e7 !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-left: none !important;
+}
+
+@media(min-width: 475px) and (max-width: 1150px) {
+    div.col-md-3 > hr{
+        visibility: hidden !important;
+    }
+}
+
+#SearchPanel{
+    margin-top: 18px !important;
+}
+
+
+@media(max-width: 990px) and (min-width: 690px){
+
+    .col-md-9{
+        margin-left: 35%;
+    }
+
+    .col-md-3{
+        float: left;
+    }
+
+    #IssuePanel{
+        padding-top: 1px;
+    }
+}
+
+.col-md-9{
+    width: 50%
 }
