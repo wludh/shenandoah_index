@@ -14,3 +14,5 @@ To use these files as a template for another index:
 with
 
 ```<iframe name="search-frame" src="path_to_your_aspx_files"></iframe>```
+
+* From there you should be good to go. You can edit CSS by editing custom.css - this file is loaded last and referenced by the embedded search content.
