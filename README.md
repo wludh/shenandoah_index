@@ -9,8 +9,8 @@ To use these files as a template for another index:
 * Upload the files onto your server.
 * Modify the path in the embedded iframe to point to the ASPX file that loads the database (this ASPX file must be on the same server). You're looking in index.html to replace something that looks like this:
 
-'''<iframe name="search-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/Explore.aspx"></iframe>'''
+```<iframe name="search-frame" src="http://MData1.ad.wlu.edu/ShenandoahExplorerApp/Explore.aspx"></iframe>```
 
 with
 
-'''<iframe name="search-frame" src="path_to_your_aspx_files"></iframe>'''
+```<iframe name="search-frame" src="path_to_your_aspx_files"></iframe>```
