@@ -7,7 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 16px;
-    line-height: 29px;
+    line-height: 1.5;
 }
 
 #sticky-footer{
@@ -218,7 +218,7 @@ body{
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 687px;
+    max-width: 521px;
 }
 
 @media(max-width: 730px){
@@ -249,8 +249,8 @@ div.col-md-3 hr{
 
 #subtitle img{
     float: left;
-    max-width: 116px;
-    max-height: 116px;
+    max-width: 119px;
+    max-height: 119px;
     margin-right: 14px;
 }
 
